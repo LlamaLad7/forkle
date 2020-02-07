@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <section class="section">
     <div class="columns is-mobile is-centered">
@@ -81,7 +82,6 @@ export default {
   },
   watch: {
     done () {
-      confetti.start()
       if (this.done.length === this.countries.length && !this.completed) {
         this.completed = true
         confetti.start()
