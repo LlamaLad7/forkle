@@ -67,7 +67,7 @@ export default {
     }
   },
   beforeRouteLeave (to, from, next) {
-    this.$confetti.stop()
+    confetti.stop()
     next()
   },
   computed: {
@@ -81,18 +81,10 @@ export default {
   },
   watch: {
     done () {
-      this.$confetti.start()
+      confetti.start()
       if (this.done.length === this.countries.length && !this.completed) {
         this.completed = true
-        this.$confetti.start({
-          particles: [
-            {
-              type: 'rect'
-            }
-          ],
-          defaultSize: 6,
-          particlesPerFrame: 3
-        })
+        confetti.start()
       }
     }
   },
