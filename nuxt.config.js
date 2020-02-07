@@ -31,8 +31,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/localStorage', mode: 'client', ssr: false },
-    { src: '~/plugins/confetti', mode: 'client' }
+    { src: '~/plugins/localStorage', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
