@@ -81,6 +81,7 @@ export default {
   },
   watch: {
     done () {
+      this.$confetti.start()
       if (this.done.length === this.countries.length && !this.completed) {
         this.completed = true
         this.$confetti.start({
